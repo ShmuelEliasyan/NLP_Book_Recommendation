@@ -1,0 +1,28 @@
+.full-width-table {
+  width: 100%;
+}
+
+.data-table{
+  width: 80%;
+  margin: 20px auto;
+}
+
+.external-container{
+  background-image: url("./../../assets/data-table-background.jpg");
+  width: 100%;
+  height: auto;
+  min-height:93.5%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flow-root;
+}
+
+.mat-row{
+  font-weight: 700;
+}
+
+::ng-deep .mat-header-row .mat-sort-header-content{
+  font-weight: 1000;
+}

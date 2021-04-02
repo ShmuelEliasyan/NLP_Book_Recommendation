@@ -1,0 +1,57 @@
+.external-container{
+  background-image: url("./../../assets/magnifier.jpg");
+  width: 100%;
+  height: 93.6%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h3{
+  margin-top: 0;
+  margin-left: 64%;
+  padding-top: 10%;
+  font-weight: 1000;
+}
+
+angular-file-uploader{
+  ::ng-deep #default {
+    margin-left: 69%;
+    width: 20%;
+    padding-top: 3%;
+  }
+
+  ::ng-deep .afu-constraints-info{
+    display: none;
+  }
+
+  ::ng-deep .textOverflow, ::ng-deep .padMarg {
+      width: 50%;
+  }
+
+  ::ng-deep .afu-reset-btn{
+    width: 40%;
+    font-weight: 700;
+  }
+
+  ::ng-deep .afu-select-btn{
+    font-weight: 700;
+  }
+
+  ::ng-deep .afu-upload-btn{
+    margin-left: 25%;
+    width: 45%; 
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  ::ng-deep .afu-valid-file{
+    margin-left: 5%;
+    padding-top: 8%;
+    font-size: medium;
+  }
+
+  ::ng-deep .text-primary{
+    font-weight: 600;
+  }
+}

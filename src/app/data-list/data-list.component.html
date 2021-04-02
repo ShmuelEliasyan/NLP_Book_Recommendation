@@ -1,0 +1,21 @@
+<div class="external-container">
+    <h2 class="p-3 text-center">Words Before Reduce Versus Words After Reduce</h2>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Before Reduce</th>
+                    <th>After Reduce</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let wordsListRow of wordsList; let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>{{wordsListRow.beforeReduce}}</td>
+                    <td>{{wordsListRow.afterReduce}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

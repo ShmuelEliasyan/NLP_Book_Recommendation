@@ -1,0 +1,23 @@
+.external-container{
+    background-image: url("./../../assets/data-list-background.jpg");
+    width: 100%;
+    height: auto;
+    min-height:93.5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flow-root;
+  }
+
+  td{
+    font-weight: 700;
+  }
+
+  th{
+    font-weight: 1000;
+  }
+
+  h3{
+    font-weight: 1100 !important;
+  }

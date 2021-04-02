@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "notrika-lifestyle": {
+    "nlp-book-recommendation": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/notrika-lifestyle",
+            "outputPath": "dist/nlp-book-recommendation",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "notrika-lifestyle:build"
+            "browserTarget": "nlp-book-recommendation:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "notrika-lifestyle:build:production"
+              "browserTarget": "nlp-book-recommendation:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "notrika-lifestyle:build"
+            "browserTarget": "nlp-book-recommendation:build"
           }
         },
         "test": {
@@ -110,15 +110,20 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "notrika-lifestyle:serve"
+            "devServerTarget": "nlp-book-recommendation:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "notrika-lifestyle:serve:production"
+              "devServerTarget": "nlp-book-recommendation:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "notrika-lifestyle"
+    }
+  },
+  "defaultProject": "nlp-book-recommendation"
 }

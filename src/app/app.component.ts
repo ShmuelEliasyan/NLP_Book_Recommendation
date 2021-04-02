@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'notrika-lifestyle';
+  similarLinkSelected = true;
+  title = 'nlp-book-recommendation';
+
+  reduceClicked(){
+    this.similarLinkSelected = false;
+  }
+
+  similarClicked(){
+    this.similarLinkSelected = true;
+  }
 }
