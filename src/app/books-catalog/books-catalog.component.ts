@@ -60,5 +60,4 @@ export class BooksCatalogComponent {
   onImageClick(imageId){
     this.router.navigateByUrl('/book-view/' + imageId);
   }
-
 }
