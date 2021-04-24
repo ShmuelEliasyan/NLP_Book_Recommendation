@@ -1,0 +1,22 @@
+<div class="external-container">
+    <div class="buttons">
+        <div class="container">
+            <a routerLink="/find-similar-books" class="btn effect04" data-sm-link-text="ENTER"><span>MANAGEMENT AREA</span></a>
+        </div>
+      </div>
+    <h1>NLP Books Recommendations</h1>  
+    <div class="search-bar-container"> 
+        <label>
+            <input type="text" required>
+            <ul>
+            <li s>s</li>
+            <li e>e</li>
+            <li a>a</li>
+            <li r>r</li>
+            <li c>c</li>
+            <li h>h</li>
+            </ul>
+        </label>
+    </div>
+    <ng-image-slider (imageClick)="onImageClick($event)" [imagePopup]="false" [infinite]="true" [autoSlide]="3" [images]="imageObject" [imageSize]="{width: '300px', height: '300px', space: 3}" #nav></ng-image-slider>
+</div>

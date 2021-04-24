@@ -14,7 +14,11 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataListComponent } from './data-list/data-list.component';
-
+import { ManagementPageComponent } from './management-page/management-page.component';
+import { BooksCatalogComponent } from './books-catalog/books-catalog.component';
+import { MatButtonModule } from '@angular/material/button';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { BookViewComponent } from './book-view/book-view.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,10 @@ import { DataListComponent } from './data-list/data-list.component';
     FindSimilarBooksComponent,
     ReduceWordsComponent,
     DataTableComponent,
-    DataListComponent
+    DataListComponent,
+    ManagementPageComponent,
+    BooksCatalogComponent,
+    BookViewComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +40,9 @@ import { DataListComponent } from './data-list/data-list.component';
     MatPaginatorModule,
     MatSortModule,
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

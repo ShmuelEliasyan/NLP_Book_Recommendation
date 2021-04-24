@@ -1,0 +1,18 @@
+<div class="external-container">
+    <div class="padding-container"></div>
+    <div class="inner-container">
+        <div class="book-description">
+            <h3>Book Description:</h3>
+            <div>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </div>
+        </div>
+        <div class="book-image"></div>        
+        <div class="similar-books">
+            <h3>Similar Books:</h3>
+            <mat-selection-list [multiple]="false">
+                <mat-list-option *ngFor="let book of similarBooksList" [value]="book.name" (click)="navigateToBook(book.id)">
+                  {{book.name}}
+                </mat-list-option>
+            </mat-selection-list>
+        </div>
+    </div>
+</div>
